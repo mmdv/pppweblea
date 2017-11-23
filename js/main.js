@@ -17,6 +17,42 @@ jQuery(document).ready(function($) {
           
       });
 
+        // 改动新增
+
+        // 提交事件
+        $('.btn-primary').on('click',function(){
+          var a = $('#company').val()
+        });
+
+// input失去焦点
+        $("input").blur(function(){
+            mesCheck($(this))
+          // if($(this).attr('id') == 'company') {
+          //   console.log(9999)
+          // }else if($(this).attr('id') == '') {
+
+          // }else if($(this).attr('id') == '') {
+            
+          // }else if($(this).attr('id') == '') {
+            
+          // }else if($(this).attr('id') == '') {
+            
+          // }else if($(this).attr('id') == '') {
+            
+          // }
+
+        });
+
+        function mesCheck(el){
+          console.log(el)
+          if (el.val() == '' ) {
+            el.css("border","1px #000 solid");
+          }
+          if (val == '') {}
+        }
+
+        // 改动新增
+
 
         var top_header = $('.parallax-content');
         top_header.css({'background-position':'center center'}); // better use CSS
